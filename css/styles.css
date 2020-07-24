@@ -35,6 +35,8 @@ h3 {
 .rotated {
   width: 50%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%; /* move the image to right*/
 }
 
 /* Navigation Bar */
@@ -61,10 +63,13 @@ h3 {
   margin: 5% 3% 5% 0;
 }
 /* --------------------------Features Section overlapping TITLE section and hidding lower iphone6 png*/
-/* POSITION: relatiive is the option that has cut the iphone6 and upper TITLE section */
+/* POSITION: relatiive is the option that has cut the iphone6 and upper TITLE section also look at
+the .rotated element --- which is positioned absolute */
 #features {
+  /* Use z-index instead of this */
+  z-index: 1;
   position: relative;
-  margin-top: -150px; /* Overlapping above div */
+  /*margin-top: -150px; /* Overlapping above div */
   background-color: #fff;
   padding: 7% 15%; /* to give padding to three H3's */
   text-align: center;
@@ -133,6 +138,7 @@ h3 {
 /* ----------PRICING------------ */
 #pricing {
   padding: 100px;
+  text-align: center;
 }
 .h3-price {
   font-size: 50px;
@@ -141,4 +147,46 @@ h3 {
 .p1-price {
   color: rgb(192, 190, 190);
   font-weight: bold;
+}
+
+/* ----------media query-------- */
+@media (max-width: 1250px) {
+  #title {
+    text-align: center;
+  }
+  .title-img-6 {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* --------------FOOTER------------------- */
+#cta {
+  background-color: #ff4c68;
+  padding: 5% 0;
+}
+.h3-footer {
+  font-family: "Montserrat-black", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fff;
+  padding: 0 30%;
+  text-align: center;
+}
+.footer-btn {
+  text-align: center;
+}
+#footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: rgb(173, 172, 172);
+}
+.icon-footer {
+  margin: 1rem;
+  color: black;
+}
+.p1-footer {
+  padding-top: 10px;
 }
