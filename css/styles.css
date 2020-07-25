@@ -2,11 +2,15 @@
 body {
   font-family: "Montserrat-black", sans-serif;
 }
+
 h2 {
   font-weight: bold;
 }
 h3 {
   font-weight: bold;
+}
+.btn-bg-global-width {
+  width: 150px;
 }
 /* This will give the padding to all items in TITLE */
 .container-fluid {
@@ -22,9 +26,9 @@ h3 {
 .ttl-div {
 }
 
-/* Customize the h1 */
+/* Customize the main h1 */
 .h1-meet {
-  font-family: "Montserrat-black", sans-serif;
+  font-family: "Montserrat-bold", sans-serif;
   font-weight: bold;
   font-size: 4rem;
   line-height: 1.5;
@@ -134,6 +138,7 @@ the .rotated element --- which is positioned absolute */
 .card-div-pad {
   padding: 3% 2%;
 }
+/* --------adding margin to FREE and 49$ sign up button similar to 99$-------- */
 .btn-card-top {
   margin-top: 3.5rem;
 }
@@ -143,10 +148,10 @@ the .rotated element --- which is positioned absolute */
   padding: 100px;
   text-align: center;
 }
-.h3-price {
+/* .h3-price {
   font-size: 50px;
   font-weight: bolder;
-}
+} */
 .p1-price {
   color: rgb(192, 190, 190);
   font-weight: bold;
