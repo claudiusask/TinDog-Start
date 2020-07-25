@@ -152,21 +152,7 @@ the .rotated element --- which is positioned absolute */
   font-weight: bold;
 }
 
-/* ----------media query-------- */
-@media (max-width: 1250px) {
-  #title {
-    text-align: center;
-  }
-  .title-img-6 {
-    position: static;
-    transform: rotate(0);
-  }
-  .fixed-media-height {
-    height: 441px;
-  }
-}
-
-/* --------------FOOTER------------------- */
+/* --------------FOOTER and CTA------------------- */
 #cta {
   background-color: #ff4c68;
   padding: 5% 0;
@@ -195,4 +181,19 @@ the .rotated element --- which is positioned absolute */
 }
 .p1-footer {
   padding-top: 10px;
+}
+
+/* ----------------------------------------------------------media query------------------------------- */
+@media (max-width: 1250px) {
+  #title {
+    text-align: center;
+  }
+  .title-img-6 {
+    position: static;
+    transform: rotate(0);
+  }
+  /* ----------To fix the Testimonial jumping height in small screen----NO MORE JUMPING on the bed--- */
+  .fixed-media-height {
+    height: 441px;
+  }
 }
